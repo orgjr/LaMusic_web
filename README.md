@@ -24,8 +24,11 @@
 
 #### Passo a Passo para rodar localmente (Linux/macOS):
 bash 
+
 git clone https://github.com/orgjr/LaMusic_web.git
+
 cd LaMusic_web
+
 php -S localhost:8080
 
  #### Acesse no navegador:
