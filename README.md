@@ -46,18 +46,28 @@ php -S localhost:8080
  **Principais Diretórios:**
 Caminho	Descrição
 /	Páginas PHP (ponto de entrada do sistema)
+
 /assets/css	Arquivos CSS personalizados
+
 /assets/img	Imagens do site
+
 /assets/js	Scripts JavaScript e chamadas AJAX
+
 /db	Banco de dados SQLite
  
 
  **Navegação básica via terminal:**
+ 
 bash
+
 cd LaMusic_web
+
 cd assets/css
+
 cd assets/img
+
 cd assets/js
+
 cd db
 
 #### Dependências e Build
@@ -73,15 +83,10 @@ Como o projeto usa PHP puro e arquivos estáticos, não há necessidade de compi
 #### Fluxo de Desenvolvimento
  **Branches:**
  - main – branch principal e estável
- - develop – branch para evolução contínua (sugestão futura)
- - feature/[nome-da-feature] – para novas funcionalidades (sugestão futura)
- **Boas práticas:**
- - Criação de Pull Requests para revisão de código
- - Integração contínua (CI) futura via GitHub Actions ou GitLab CI
 
 #### Testes
 Como o projeto frontend não utiliza TypeScript ou Node.js diretamente, testes automatizados ainda não estão implementados.
-Sugestão futura: configurar testes para as chamadas AJAX usando Jest + jsdom, ou para o backend com JUnit.
+Sugestão futura: testes para as chamadas AJAX usando Jest + jsdom, ou para o backend com JUnit (API REST Springboot).
 
 #### Deployment
  Ambiente de produção:
@@ -93,17 +98,13 @@ Sugestão futura: configurar testes para as chamadas AJAX usando Jest + jsdom, o
 
 #### Guia de Estilo
  - Organização dos arquivos: padrão MVC simplificado (PHP + JS/CSS separados)
- - Boas práticas de código:
- - Comentários explicativos
- - Funções JS bem nomeadas
- - Código limpo e modular
  **Commits:**
  - feat: para funcionalidades
  - fix: para correções
  - refactor: para melhorias internas
 #### Documentação de APIs
  - A lógica de persistência de dados é feita diretamente no banco SQLite usando comandos SQL via PDO.
- - Não há uso de Swagger/Postman, pois não existe camada intermediária de API REST.
+ - Não há uso de Swagger/Postman, pois não existe camada intermediária de API REST (falta integração com a API)
 
 #### Segurança e Boas Práticas
  - Autenticação básica via sessão PHP (implementação local)
